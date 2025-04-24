@@ -1,0 +1,147 @@
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+body {
+    text-align: center;
+    color:#354058;
+    background-color: white;
+}
+
+a {
+    color:#354058;
+    text-decoration: none;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    
+}
+
+/*--Header Section--*/
+.Header-section {
+    height: 2.6rem;
+    justify-content: space-between;
+    display: flex;
+    align-items: flex-start;
+    background-color:#f3efefff;
+    border-bottom: 1px solid #354058;
+    position: sticky;
+    top: 0;
+    z-index: 99;
+    padding: 0rem 1rem;
+}
+
+.logo_bar,
+.nav_bar {
+    height: 2.5rem;
+    display:flex;
+    align-items: center;
+}
+
+.logo_ico {
+    width: 2rem;
+    height: 2rem;
+    margin-right: 0.3rem;
+}
+
+.nav_bar li {
+    display: inline;
+    font-size: 1rem;
+}
+
+.nav_bar li:not(:last-child)::after {
+    display: inline-block;
+    margin: 0 0.5rem;  /* top and bottom | left and right */
+    content: "•";
+}
+
+
+/*-- Jumbotron-section--*/
+.Jumbotron-section {
+    background-color: #f3efefff;
+    height:14rem;
+    justify-content: center;
+    align-items: center;
+    color: #354058;
+    font-size: 1.5rem;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/*-- Introduction-section--*/
+#introduction {
+    font-size: 1.6rem;
+    font-family: "Times New Roman";
+    text-align: justify;
+    text-indent: 3rem;
+    line-height: 140%;
+    margin: 2rem auto;  /*auto centers in page*/
+    width: 80%;
+    
+}
+
+/*-- Project Boxes-section--*/
+#click {
+    margin-bottom: 0;
+}
+
+.Boxes-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;    /*squished to center*/
+    gap: 1.8rem;
+}
+
+.project-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #2c3549;
+    padding: 0 .7rem;
+    width: 8rem;
+    height: 7rem;
+    font-size: 1.rem;
+}
+
+.box1 {
+    background-color: #b9b9d1ff;
+}
+.box2 {
+    background-color: #cbc2d5ff;
+}
+.box3 {
+    background-color: #d9ccd9ff;
+}
+.box4 {
+    background-color: #e4d7deff;
+}
+.box5 {
+    background-color: #ede3e5ff;
+}
+
+.project-box:hover{
+    background-color: lightgrey;
+}
+
+/*-- Project-Descriptions-section--*/
+.project-descriptions {
+    margin-top: 4rem;
+    font-family: "Times New Roman";
+    font-size: 1.8rem;
+    text-align: center;
+    margin: 1rem auto;  /*auto centers in page*/
+    width: 70%;
+    line-height: 150%;
+}
+
+#projectImage {
+    display: block;
+    min-height: 5rem;
+    min-width: 5rem;
+    margin: 0 auto;
+    height: 22rem;
+    width: auto;
+}
+  
