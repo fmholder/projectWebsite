@@ -23,7 +23,6 @@ a {
 .container{
     display: flex;
     flex-direction: row;    
-    /*border: 2px solid red;*/
 }
 
 /*--Navigation bar and menu--*/
@@ -229,8 +228,7 @@ nav {
   .iconName {
     height: 1.2rem;
 }
-} /*end of 1000*/
-
+} /*end of 680*/
 
 @media only screen and (max-width: 550px) {
 /* nav bar turns into menu */  
@@ -238,6 +236,7 @@ nav {
 #open-sidebar-button, #close-sidebar-button{
     display: block;
   }
+
   nav{
     position: fixed;
     top: 0;
@@ -272,7 +271,7 @@ nav {
   nav .home-li{
     margin-right: unset;
   }
-} /*end of 600*/
+} /*end of 550*/
 
   @media only screen and (max-width: 480px) {
     .mobile-text {
@@ -291,7 +290,7 @@ nav {
     }
 
     .project-box {
-        text-size: 1rem;
+        font-size: 1rem;
         margin: 3px;
         border: .5px solid var(--text-color);
         width: 4rem;
