@@ -3,8 +3,8 @@
 <head>
     <meta charset='UTF-8'>
     <meta name='viewport' content='width=device-width, initial-scale=1.0'>
-    <link rel='stylesheet' href='./resources/css/styles.css'>
-    <link rel='shortcut icon' href='./resources/kikki.ico' type='image/x-icon'>
+    <link rel='stylesheet' href='resources/css/styles.css'>
+    <link rel='shortcut icon' href='resources/kikki.ico' type='image/x-icon'>
     
     <title>Kinikee</title>
 </head>
@@ -13,28 +13,30 @@
   <!-- Navigation bar and menu -->     
     <!-- Sidebar Menu from Conding2GO https://www.youtube.com/watch?v=m7YDWNz65iI-->
     <button id="open-sidebar-button" onclick="openSidebar()">
-      <img id="open-close-pic" src="./resources/images/menu.svg"/>
+      <img id="open-close-pic" src="resources/images/menu.svg"/>
     </button>
 
     <nav id="navbar">
       <ul>
         <li>
           <button id="close-sidebar-button" onclick="closeSidebar()">
-            <img id="open-close-pic" src="./resources/images/cross-close.svg"/>
+            <img id="open-close-pic" src="resources/images/cross-close.svg"/>
           </button>
         </li>
-        <li class="home-li"><a href="./index.html"><img class="iconName" src="./resources/images/iconWithName.png" id="#Home"/></a></li>
+        <li class="home-li"><a href="index.html"><img class="iconName" src="resources/images/iconWithName.png" id="#Home"/></a></li>
         <!-- old link, may go back with more knowledge
-          <li class="home-li"><a class="active-link" href="./index.html">		<img class="nav_img logo_ico" src="./resources/kikki.ico" id="#Home"/><h2>Kinikee</h2></a></li> -->
+          <li class="home-li"><a class="active-link" href="index.html">		<img class="nav_img logo_ico" src="resources/kikki.ico" id="#Home"/><h2>Kinikee</h2></a></li> -->
         <li><a href="index.html">Home</a></li>
         <li><a href="#About">About Me</a></li>
-        <li><a href="./contact-page.html">Contact</a></li>
+        <li><a href="contact-page.html">Contact</a></li>
         <li><a href="#Resume">Resume</a></li>
         <li><a href="#Certificates">Certificates</a></li>
       </ul>
     </nav>
 
     <div id="overlay" onclick="closeSidebar()"></div>
+
+    
 
     <!-- Jumbotron-section -->
      <div class="container Jumbotron-section">
@@ -67,5 +69,5 @@
     
 </footer>
 
-<script src='./script.js'></script>
+<script src='script.js'></script>
 </html>

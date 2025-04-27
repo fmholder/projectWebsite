@@ -5,23 +5,23 @@ function showDescription(id) {
     switch(id) {
         case 1 :
             st = "I had to build a Node.js console app that generates random messages each time a user runs the program and log the version project with Git/GitHub. The theme was, 'What should I make for dinner tonight?'"
-            imageScript = "resources/kikki.ico";
+            imageScript = "./resources/kikki.ico";
             break;
         case 2 :
-            st = "Description for box 2 - Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, saepe sint. Numquam ad labore quos maiores mollitia ea magni consectetur?"
+            st = "For this project, I built a personal portfolio site, a static website where I can share the projects that I built in this Path.<br>The requirements was to have at least one interactive feature, a Git version control, and to make it responsive for a mobile device."
             imageScript = "./resources/images/kikki portrait.jpg";
             break;
         case 3 :
             st = "Description for box 3 - Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, saepe sint. Numquam ad labore quos maiores mollitia ea magni consectetur?"
-            imageScript = "resources/kikki.ico";
+            imageScript = "./resources/kikki.ico";
             break;
         case 4 :
             st = "Description for box 4 - Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, saepe sint. Numquam ad labore quos maiores mollitia ea magni consectetur?"
-            imageScript = "resources/kikki.ico";
+            imageScript = "./resources/kikki.ico";
             break;
         case 5 :
             st = "Description for box 5 - Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, saepe sint. Numquam ad labore quos maiores mollitia ea magni consectetur?"
-            imageScript = "resources/kikki.ico";
+            imageScript = "./resources/kikki.ico";
             break;
         default :  
             st = "---";
