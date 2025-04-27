@@ -1,3 +1,9 @@
+:root{
+    --primary-color: white;
+    --hover-color: lightgrey;
+    --accent-color: #f3efefff;
+    --text-color: #354058;
+  }
 html {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
@@ -5,73 +11,110 @@ html {
 
 body {
     text-align: center;
-    color:#354058;
+    color:var(--text-color);
     background-color: white;
 }
 
 a {
-    color:#354058;
+    color:var(--text-color);
     text-decoration: none;
 }
 
 .container{
     display: flex;
-    flex-direction: row;
-    
+    flex-direction: row;    
+    /*border: 2px solid red;*/
 }
 
-/*--Header Section--*/
-.Header-section {
-    height: 2.6rem;
-    justify-content: space-between;
-    display: flex;
-    align-items: flex-start;
-    background-color:#f3efefff;
-    border-bottom: 1px solid #354058;
-    position: sticky;
-    top: 0;
-    z-index: 99;
-    padding: 0rem 1rem;
-}
-
-.logo_bar,
-.nav_bar {
-    height: 2.5rem;
-    display:flex;
-    align-items: center;
-}
-
-.logo_ico {
-    width: 2rem;
+/*--Navigation bar and menu--*/
+.iconName {
     height: 2rem;
-    margin-right: 0.3rem;
+    width: auto;
+    padding: 0;
+}
+#open-close-pic {
+  height: 1.5rem;
+  width: auto;
+  filter: invert(22%) sepia(19%) saturate(914%) hue-rotate(183deg) brightness(95%) contrast(90%);
+      /* https://codepen.io/sosuke/pen/Pjoqqp  */
 }
 
-.nav_bar li {
-    display: inline;
-    font-size: 1rem;
+/* nav and side bar from youtuber noted in the mobile section */
+nav {
+  position: sticky;
+  top: 0;
+  z-index: 99;
+  padding: 0rem 0rem;
 }
 
-.nav_bar li:not(:last-child)::after {
+  nav ul{   /*real box to play in */
+    display: flex;
+    background-color: var(--accent-color);
+    align-items: flex-end;
+    background-color: var(--accent-color);
+    border-bottom: 1px solid var(--text-color);
+    height: 2.6rem;
+    padding: 0 1px;  
+    font-size: 1.3rem;
+    margin: 0;
+  }
+  nav li{    
+    display: flex;
     display: inline-block;
     margin: 0 0.5rem;  /* top and bottom | left and right */
-    content: "•";
-}
+  }
+  nav .home-li{
+    margin-right: auto;
+  }
+  nav a{
+    display: flex;
+    text-decoration: none;
+    color: var(--text-color);
+    transition: background-color 150ms ease;
+  }
+  nav a:hover{
+    background-color: var(--hover-color);
+  }
+  nav a.active-link{
+    border-bottom: 2px solid var(--text-color);
+  }
 
+#open-sidebar-button{
+    display: none;
+    background: none;
+    border: none;
+    padding: 1em;
+    margin-left: auto;
+    cursor: pointer;
+  }
+  #close-sidebar-button{
+    display: none;
+    background: none;
+    border: none;
+    padding: 1em;
+    cursor: pointer;
+  }
+  #overlay{   /* background after button is pushed */
+    background: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    inset: 0;
+    z-index: 9;
+    display: none;
+  }
 
 /*-- Jumbotron-section--*/
 .Jumbotron-section {
-    background-color: #f3efefff;
+    background-color: var(--accent-color);
     height:14rem;
     justify-content: center;
     align-items: center;
-    color: #354058;
     font-size: 1.5rem;
     font-family: 'Courier New', Courier, monospace;
+    padding: 2rem;
 }
 
 /*-- Introduction-section--*/
-#introduction {
+.introduction {
     font-size: 1.6rem;
     font-family: "Times New Roman";
     text-align: justify;
@@ -87,23 +130,24 @@ a {
     margin-bottom: 0;
 }
 
-.Boxes-section {
+.boxes-section {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;    /*squished to center*/
-    gap: 1.8rem;
+    gap: 1.4rem;
 }
 
 .project-box {
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 2px solid #2c3549;
+    border: 2px solid var(--text-color);;
     padding: 0 .7rem;
     width: 8rem;
     height: 7rem;
     font-size: 1.rem;
 }
+
 
 .box1 {
     background-color: #b9b9d1ff;
@@ -127,6 +171,8 @@ a {
 
 /*-- Project-Descriptions-section--*/
 .project-descriptions {
+    flex-direction: column;
+    align-items: center;
     margin-top: 4rem;
     font-family: "Times New Roman";
     font-size: 1.8rem;
@@ -145,3 +191,118 @@ a {
     width: auto;
 }
   
+
+/* Contact Page exclusives */
+
+.contactParagraph {
+    text-align: center;
+}
+
+.contact-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid var(--text-color);
+    padding: 0 .7rem;
+    width: 8rem;
+    height: 7rem;
+    font-size: 1.rem;
+}
+
+.contact-box:hover{
+    background-color: lightgrey;
+}
+
+.contact_img {
+    margin: 0 auto;
+    height: 4.5rem;
+    width: auto;
+}
+
+
+/*----------Responsive part---------*/
+
+@media only screen and (max-width: 680px) {
+  nav ul{
+    font-size: 1rem;
+  }
+  .iconName {
+    height: 1.2rem;
+}
+} /*end of 1000*/
+
+
+@media only screen and (max-width: 550px) {
+/* nav bar turns into menu */  
+    /* from Conding2GO https://www.youtube.com/watch?v=m7YDWNz65iI */
+#open-sidebar-button, #close-sidebar-button{
+    display: block;
+  }
+  nav{
+    position: fixed;
+    top: 0;
+    right: -100%;
+    height: 100vh;
+    width: min(12em, 100%);
+    background-color: var(--accent-color);
+    z-index: 10;
+    border-left: 1px solid var(--hover-color);
+    transition: right 300ms ease-in-out;
+  }
+  nav.show{
+    right: 0;
+  }
+  nav.show ~ #overlay{
+    display: block;
+  }
+  nav ul{
+    width: 100%;
+    flex-direction: column;
+    border: none;
+  }
+  nav a{
+    width: 100%;
+    padding-left: 2.5em;
+    margin: .75rem auto;
+    font-size: 1.2rem;
+  }
+  nav a.active-link{
+    border-bottom: none;
+  }
+  nav .home-li{
+    margin-right: unset;
+  }
+} /*end of 600*/
+
+  @media only screen and (max-width: 480px) {
+    .mobile-text {
+        font-size: 1.2rem;
+        text-align: center;
+        text-indent: 0;
+    }
+
+    #projectImage {
+        height: 12rem;
+        width: auto;
+    }
+
+    .boxes-section {
+        gap: 0;
+    }
+
+    .project-box {
+        text-size: 1rem;
+        margin: 3px;
+        border: .5px solid var(--text-color);
+        width: 4rem;
+        height: 3.5rem;
+        font-size: 0.8rem;
+    }
+  } /*end of 480*/
+
+  @media only screen and (max-width: 280px) {
+    html{
+      width: 280px;     /*min width allowed*/
+      overflow: auto;
+    }
+  } /*end of 330*/
