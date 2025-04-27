@@ -10,23 +10,32 @@
 </head>
 
 <body>
-    <!-- Header-section -->
-     <div class="container Header-section">
-        <div class="container logo_bar">
-            <a href="./index.html"><img class="nav_img logo_ico" src="./resources/kikki.ico" id="#Home"/></a>
-            <a href="./index.html"><h2>Kinikee</h2></a>
-          </div>
-      
-          <div class="container nav_bar">
-            <ul>
-              <li><a class="navigation" href="index.html">Home</a></li>
-              <li><a class="navigation" href="#About">About Me</a></li>
-              <li><a class="navigation self" href="#Contact">Contact</a></li>
-              <li><a class="navigation" href="#Resume">Resume</a></li>
-              <li><a class="navigation" href="#Certificates">Certificates</a></li>
-            </ul>
-          </div>
-     </div>
+  <!-- Navigation bar and menu -->     
+    <!-- Sidebar Menu from Conding2GO https://www.youtube.com/watch?v=m7YDWNz65iI-->
+    <button id="open-sidebar-button" onclick="openSidebar()">
+        <img id="open-close-pic" src="./resources/images/menu.svg"/>
+      </button>
+  
+      <nav id="navbar">
+        <ul>
+          <li>
+            <button id="close-sidebar-button" onclick="closeSidebar()">
+              <img id="open-close-pic" src="./resources/images/cross-close.svg"/>
+            </button>
+          </li>
+          <li class="home-li"><a href="./index.html"><img class="iconName" src="./resources/images/iconWithName.png" id="#Home"/></a></li>
+          <!-- old link, may go back with more knowledge
+            <li class="home-li"><a class="active-link" href="./index.html">		<img class="nav_img logo_ico" src="./resources/kikki.ico" id="#Home"/><h2>Kinikee</h2></a></li> -->
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#About">About Me</a></li>
+          <li><a href="./contact-page.html">Contact</a></li>
+          <li><a href="#Resume">Resume</a></li>
+          <li><a href="#Certificates">Certificates</a></li>
+        </ul>
+      </nav>
+  
+      <div id="overlay" onclick="closeSidebar()"></div>
+  
 
     <!-- Jumbotron-section -->
      <div class="container Jumbotron-section">
@@ -38,12 +47,12 @@
         <p class="introduction contactParagraph">I would love to hear your suggestions.</p>
     </div>
 
-    <!-- Project Boxes-section
+    <!-- Project Boxe-section
         Project name here. Description in Java function -->
-    <div class="container Boxes-section">
-        <h3 class="contact-box box1">kikki<br>@email.com</h3>
-        <h3 class="contact-box box3"><img class="contact_img" src="./resources/images/github2.png"</h3>
-        <h3 class="contact-box box5"><img class="contact_img" src="./resources/images/linkedIn.jpg"/></h3>
+    <div class="container boxes-section">
+        <h3 class="project-box box1">kikki<br>@email.com</h3>
+        <h3 class="project-box box3"><img class="contact_img" src="./resources/images/github2.png"</h3>
+        <h3 class="project-box box5"><img class="contact_img" src="./resources/images/linkedIn.jpg"/></h3>
     </div>   
     
     <!-- Project-Descriptions-section -->

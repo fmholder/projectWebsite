@@ -197,21 +197,6 @@ nav {
     text-align: center;
 }
 
-.contact-box {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 2px solid var(--text-color);
-    padding: 0 .7rem;
-    width: 8rem;
-    height: 7rem;
-    font-size: 1.rem;
-}
-
-.contact-box:hover{
-    background-color: lightgrey;
-}
-
 .contact_img {
     margin: 0 auto;
     height: 4.5rem;
@@ -285,6 +270,9 @@ nav {
         width: auto;
     }
 
+    .contact_img {
+      height: 2.5rem;
+    }
     .boxes-section {
         gap: 0;
     }
