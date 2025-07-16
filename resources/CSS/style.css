@@ -20,6 +20,10 @@ a {
     text-decoration: none;
 }
 
+a:hover {
+  color: blue;
+}
+
 .container{
     display: flex;
     flex-direction: row;    
@@ -43,7 +47,6 @@ nav {
   position: sticky;
   top: 0;
   z-index: 99;
-  padding: 0rem 0rem;
 }
 
   nav ul{   /*real box to play in */
@@ -103,6 +106,7 @@ nav {
 
 /*-- Jumbotron-section--*/
 .Jumbotron-section {
+    flex-flow: row wrap;
     background-color: var(--accent-color);
     height:14rem;
     justify-content: center;
@@ -147,7 +151,6 @@ nav {
     font-size: 1.rem;
 }
 
-
 .box1 {
     background-color: #b9b9d1ff;
 }
@@ -185,6 +188,7 @@ nav {
     display: block;
     min-height: 5rem;
     min-width: 5rem;
+    max-width: 50rem;
     margin: 0 auto;
     height: 22rem;
     width: auto;
@@ -193,16 +197,21 @@ nav {
 
 /* Contact Page exclusives */
 
-.contactParagraph {
-    text-align: center;
+.contact-box {
+    width: 26.8rem;
+    height: 7rem;
 }
 
-.contact_img {
-    margin: 0 auto;
-    height: 4.5rem;
-    width: auto;
-}
 
+/* Resume Page exclusives */
+.resume {
+  padding: 2rem;
+  display: flex;
+}
+.resume_img {
+  height: 50em;
+  border: 2px solid #757575;
+}
 
 /*----------Responsive part---------*/
 

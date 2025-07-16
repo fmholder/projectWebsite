@@ -1,5 +1,11 @@
-function showDescription(id) {
-    let st = "string";
+function showDescription2(id) {
+  // Change this so that it will look like the Books thing with the
+  // second JavaScript with just the information
+  // so that I can just reference throughout the whole website.
+  // I have a feeling that I will end up putting up some sort of
+  // example of data storage in like SQL or something soon.
+
+  let st = "string";
     let image = "path";
     
     switch(id) {
@@ -23,20 +29,6 @@ function showDescription(id) {
             st = "Description for box 5 - Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, saepe sint. Numquam ad labore quos maiores mollitia ea magni consectetur?"
             imageScript = "./resources/kikki.ico";
             break;
-        case 11 :
-            break;
-        case 12 :
-            st = "I learned the basics of web development to build my own website. The courses included HTML, CSS, Responsive Design, Flexbox, CSS Transitions, GitHub Pages, and more."
-            imageScript = "./resources/images/certificate-build_website.png";
-             //https://www.codecademy.com/learn/paths/learn-how-to-build-websites
-            break;
-        case 13 :
-            break;
-        case 14 :
-            break;
-        case 15 :
-            break;
-      
         default :  
             st = "---";
     }// switch
@@ -44,46 +36,3 @@ function showDescription(id) {
     document.getElementById('projectImage').src= imageScript;
     document.getElementsByClassName(mobile-description).innerHTML = st;
 }// function
-
-// below is from Conding2GO https://www.youtube.com/watch?v=m7YDWNz65iI
-const openButton = document.getElementById('open-sidebar-button')
-const navbar = document.getElementById('navbar')
-
-const media = window.matchMedia("(width < 700px)")
-
-media.addEventListener('change', (e) => updateNavbar(e))
-
-function updateNavbar(e){
-  const isMobile = e.matches
-  console.log(isMobile)
-  if(isMobile){
-    navbar.setAttribute('inert', '')
-  }
-  else{
-    // desktop device
-    navbar.removeAttribute('inert')
-  }
-}
-
-function openSidebar(){
-  navbar.classList.add('show')
-  openButton.setAttribute('aria-expanded', 'true')
-  navbar.removeAttribute('inert')
-}
-
-function closeSidebar(){
-  navbar.classList.remove('show')
-  openButton.setAttribute('aria-expanded', 'false')
-  navbar.setAttribute('inert', '')
-}
-
-// For Bookmark Links
-// const navLinks = document.querySelectorAll('nav a')
-// navLinks.forEach(link => {
-//   link.addEventListener('click', () => {
-//     closeSidebar()
-//   })
-// })
-
-updateNavbar(media)
-

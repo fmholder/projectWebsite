@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <link rel='stylesheet' href= 'resources/CSS/style.css'>
+    <link rel='shortcut icon' href='resources/kikki.ico' type='image/x-icon'>
+    
+    <title>Kinikee</title>
+</head>
+
+<body>
+  <!-- Navigation bar and menu -->     
+    <!-- Sidebar Menu from Conding2GO https://www.youtube.com/watch?v=m7YDWNz65iI-->
+    <button id="open-sidebar-button" onclick="openSidebar()">
+      <img id="open-close-pic" src="resources/images/menu.svg"/>
+    </button>
+
+    <nav id="navbar">
+      <ul>
+        <li>
+          <button id="close-sidebar-button" onclick="closeSidebar()">
+            <img id="open-close-pic" src="resources/images/cross-close.svg"/>
+          </button>
+        </li>
+        <li class="home-li"><a href="index.html"><img class="iconName" src="resources/images/iconWithName.png" id="#Home"/></a></li>
+        <li><a href="nav_resume.html">Resume</a></li>
+        <li><a href="nav_completed.html">Achievements</a></li>
+        <li><a href="nav_about.html">About Me</a></li>
+        <li><a href="nav_contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div id="overlay" onclick="closeSidebar()"></div>
+
+<div class="resume boxes-section container">
+  <img class="resume_img" src="resources/images/Resume.png" />
+</div>    
+     
+
+</body>
+
+<footer>
+    
+</footer>
+
+<script src='script.js'></script>
+</html>
